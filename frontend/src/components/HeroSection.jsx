@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "./ui/button";
+import { Search } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -23,6 +25,17 @@ const HeroSection = () => {
           network of employers and personalized job matches, we help you
           navigate the path to your next big opportunity.
         </p>
+
+        <div className="flex w-2/5 shadow-lg rounded-full mx-auto pl-3 my-5 border-gray-400 border-2 ">
+          <input
+            type="text"
+            placeholder="Explore jobs..."
+            className="outline-none border-none w-full p-2 m-1 "
+          />
+          <Button className="rounded-r-full  bg-purple-800  py-6 hover:bg-purple-700">
+            <Search className="h-8 w-8" />
+          </Button>
+        </div>
       </div>
     </>
   );
